@@ -1,0 +1,6 @@
+FROM tillsteinbach/vwsfriend-grafana:0.24.10
+
+USER root
+RUN grafana-cli plugins install marcusolsson-json-datasource && \
+    grafana-cli plugins install gapit-htmlgraphics-panel
+USER grafana

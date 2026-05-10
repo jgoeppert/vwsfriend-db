@@ -1,0 +1,143 @@
+{
+  "status": "active",
+  "id": 686,
+  "typeId": 3,
+  "typeName": "Panel",
+  "typeCode": "panel",
+  "slug": "gapit-htmlgraphics-panel",
+  "name": "HTML graphics",
+  "description": "Grafana panel for displaying metric sensitive HTML and SVG graphics",
+  "keywords": [
+    "html",
+    "svg",
+    "javascript",
+    "graphics",
+    "gapit",
+    "panel"
+  ],
+  "version": "2.2.3",
+  "versionStatus": "active",
+  "versionSignatureType": "community",
+  "versionSignedByOrg": "gapit",
+  "versionSignedByOrgName": "gapit",
+  "userId": 0,
+  "orgId": 409513,
+  "orgName": "gapit",
+  "orgSlug": "gapit",
+  "orgUrl": "",
+  "url": "https://github.com/gapitio/gapit-htmlgraphics-panel",
+  "createdAt": "2020-11-19T10:48:10.000Z",
+  "updatedAt": "2025-11-12T13:03:21.000Z",
+  "json": {
+    "type": "panel",
+    "name": "HTML graphics",
+    "id": "gapit-htmlgraphics-panel",
+    "info": {
+      "description": "Grafana panel for displaying metric sensitive HTML and SVG graphics",
+      "author": {
+        "name": "Gapit",
+        "url": "https://gapit.io/"
+      },
+      "keywords": [
+        "html",
+        "svg",
+        "javascript",
+        "graphics",
+        "gapit",
+        "panel"
+      ],
+      "logos": {
+        "small": "img/logo.svg",
+        "large": "img/logo.svg"
+      },
+      "screenshots": [
+        {
+          "name": "In action",
+          "path": "img/screenshot-building-overview.png"
+        },
+        {
+          "name": "Edit view",
+          "path": "img/screenshot-building-overview-edit.png"
+        },
+        {
+          "name": "Radar example",
+          "path": "img/screenshot-react-radar-example.png"
+        },
+        {
+          "name": "Code editor",
+          "path": "img/screenshot-code-editor.png"
+        }
+      ],
+      "links": [
+        {
+          "name": "Website (docs)",
+          "url": "https://gapit-htmlgraphics-panel.gapit.io/"
+        },
+        {
+          "name": "Project site",
+          "url": "https://github.com/gapitio/gapit-htmlgraphics-panel"
+        },
+        {
+          "name": "MIT License",
+          "url": "https://github.com/gapitio/gapit-htmlgraphics-panel/blob/main/LICENSE"
+        }
+      ],
+      "version": "2.2.3",
+      "updated": "2025-11-12"
+    },
+    "dependencies": {
+      "grafanaDependency": ">=8.2.0"
+    },
+    "buildMode": "production"
+  },
+  "readme": "<h1>HTML graphics</h1>\n<p><a href=\"https://grafana.com/grafana/plugins/gapit-htmlgraphics-panel\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins%2Fgapit-htmlgraphics-panel&amp;query=%24.version&amp;prefix=v&amp;style=flat&amp;logo=grafana&amp;label=marketplace&amp;color=F46800\" alt=\"Grafana marketplace\"></a>\n<a href=\"https://grafana.com/grafana/plugins/gapit-htmlgraphics-panel\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins%2Fgapit-htmlgraphics-panel&amp;query=%24.downloads&amp;style=flat&amp;logo=grafana&amp;label=downloads&amp;color=F46800\" alt=\"Grafana downloads\"></a></p>\n<p><a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/github/v/release/gapitio/gapit-htmlgraphics-panel?style=flat&amp;logo=github&amp;color=008c14\" alt=\"GitHub release (latest by date)\"></a>\n<a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/github/downloads/gapitio/gapit-htmlgraphics-panel/total?style=flat&amp;logo=github&amp;color=008c14\" alt=\"GitHub downloads\"></a>\n<a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/github/stars/gapitio/gapit-htmlgraphics-panel?style=flat&amp;logo=github&amp;color=008c14\" alt=\"GitHub repo stars\"></a>\n<a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/actions/workflows/release.yml\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/github/actions/workflow/status/gapitio/gapit-htmlgraphics-panel/release.yml?style=flat&amp;logo=github&amp;label=release&amp;color=008c14\" alt=\"GitHub release build status\"></a>\n<a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener nofollow\"><img src=\"https://img.shields.io/github/license/gapitio/gapit-htmlgraphics-panel?style=flat&amp;color=007ec6\" alt=\"License\"></a></p>\n<p>Grafana panel for displaying metric sensitive HTML and SVG graphics.</p>\n<p>Full documentation for the plugin is available on the <a href=\"https://gapit-htmlgraphics-panel.gapit.io/\" target=\"_blank\" rel=\"noopener nofollow\">website</a>.</p>\n<p><img src=\"https://github.com/gapitio/gapit-htmlgraphics-panel/raw/d37b4a2b893f197091bc68037001cd9131aae6f3/src/img/screenshot-edit-mode.png\" alt=\"Preview\"></p>\n<p>This plugin is highly inspired by <a href=\"https://github.com/MarcusCalidus/marcuscalidus-svg-panel\" target=\"_blank\" rel=\"noopener nofollow\">marcuscalidus-svg-panel</a>, <a href=\"https://github.com/AidanMountford/aidanmountford-html-panel\" target=\"_blank\" rel=\"noopener nofollow\">aidanmountford-html-panel</a>, and <a href=\"https://github.com/ACE-IoT-Solutions/ace-svg-react\" target=\"_blank\" rel=\"noopener nofollow\">aceiot-svg-panel</a>.</p>\n",
+  "changelog": "<h1>Changelog</h1>\n<h2>v2.2.3 (2025-11-12)</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Repo</strong>: Don't use direct css imports <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/212\" target=\"_blank\">#212</a></li>\n</ul>\n<h2>v2.2.2 (2025-11-05)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Build</strong>: Add provenance attestation for builds <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/208\" target=\"_blank\">#208</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>UI</strong>: Fix small file upload button <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/210\" target=\"_blank\">#210</a> <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/210\" target=\"_blank\">#211</a></li>\n</ul>\n<h2>v2.2.1 (2025-07-02)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Add open sans font license to the output dist <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/39e949b6349974d8b1b48c4adc1e27d53212f35a\" target=\"_blank\">39e949b</a></li>\n</ul>\n<h2>v2.2.0 (2025-06-18)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Migrate to grafana create plugin <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/188\" target=\"_blank\">#188</a>, <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/41062ec1880f7d3ec9cb25bf6246768b07c58c9f\" target=\"_blank\">41062ec</a></li>\n<li><strong>Repo</strong>: Add new scroll container <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/200\" target=\"_blank\">#200</a></li>\n<li><strong>Declarations</strong>: Dynamically update type declarations <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/202\" target=\"_blank\">#202</a></li>\n<li><strong>Code editor</strong>: Don't wait for declarations to load editor <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/203\" target=\"_blank\">#203</a></li>\n<li><strong>Code editor</strong>: Add adjustable height for the code editor <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/206\" target=\"_blank\">#206</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Readme</strong>: Fix broken badge links <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/eb18ff6ca0d3df2f11143fb92114c5f1af5e4dcf\" target=\"_blank\">eb18ff6</a>, <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/25eff4fb0a77173ec9e2383337827be392c33486\" target=\"_blank\">25eff4f</a></li>\n<li><strong>Declarations</strong>: Load declarations with onRender <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/204\" target=\"_blank\">#204</a></li>\n</ul>\n<h2>v2.1.1 (2022-08-11)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Declarations</strong>: Add missing declaration descriptions <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/301e69a862a4eb5621690732932620a4e25968e3\" target=\"_blank\">301e69a</a></li>\n</ul>\n<h2>v2.1.0 (2022-08-09)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Options</strong>: Add Grafana scrollbar <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/111\" target=\"_blank\">#111</a></li>\n<li><strong>Declarations</strong>: More accurate declarations <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/113\" target=\"_blank\">#113</a></li>\n<li><strong>Repo</strong>: Add locationService <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/117\" target=\"_blank\">#117</a></li>\n</ul>\n<h2>v2.0.3 (2022-03-07)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Add release files without the version number <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/1a8b313b03ee9f59edc10291a6d7ff5e5be69512\" target=\"_blank\">1a8b313</a></li>\n</ul>\n<h2>v2.0.2 (2022-01-31)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Update grafana packages to work with latest grafana version (8.3.4)</li>\n</ul>\n<h2>v2.0.1 (2022-01-10)</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Repo</strong>: Fix inconsistency with dynamic variables <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/77\" target=\"_blank\">#77</a></li>\n<li><strong>Repo</strong>: Fix fieldDisplayValues is undefined on panel load <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/72\" target=\"_blank\">#72</a></li>\n<li><strong>Options</strong>: Fix wrong default calcs value <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/75\" target=\"_blank\">#75</a></li>\n</ul>\n<h2>v2.0.0 (2021-11-30)</h2>\n<p><a href=\"https://gapit-htmlgraphics-panel.gapit.io/docs/release-notes/v2.0.0/\" target=\"_blank\">Release notes v2.0.0</a></p>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Add better calcs mutation handler <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/a7abb76aeedb1e40bfa5253695a0e4273bc4b0d5\" target=\"_blank\">a7abb76</a></li>\n<li><strong>Repo!</strong>: Don't save the import/export option (<code>importedPanelOptions</code>) <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/211e35b5d8e54d2a7f9863e40024ac56f8d8be7e\" target=\"_blank\">211e35b</a></li>\n</ul>\n<h3>Breaking changes</h3>\n<h4>Don't save the import/export option (<code>importedPanelOptions</code>)</h4>\n<p>Halves the size of the saved panel options. This might have some effects on code that checks this option. The options change doesn't happen until a change/save in the import/export section is triggered.</p>\n<h2>v1.5.0 (2021-10-28)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Add dynamic props <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/55\" target=\"_blank\">#55</a></li>\n<li><strong>Repo</strong>: Add dynamic htmlGraphics <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/56\" target=\"_blank\">#56</a></li>\n<li><strong>Repo</strong>: Add onInitOnResize <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/63\" target=\"_blank\">#63</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Repo</strong>: Fix onInit triggers when leaving edit mode <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/59\" target=\"_blank\">#59</a></li>\n</ul>\n<h2>v1.4.1 (2021-10-28)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Show error message in the alert component <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/54\" target=\"_blank\">#54</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Repo</strong>: Fix default onRender code causes error <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/commit/acec8206b437111bdba71d0b7739f4f27a1c83b1\" target=\"_blank\">acec820</a></li>\n</ul>\n<h2>v1.4.0 (2021-10-20)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Code editor</strong>: Only load declarations in edit mode <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/49\" target=\"_blank\">#49</a></li>\n<li><strong>Options</strong>: Add stock field and overrides tabs <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/24\" target=\"_blank\">#24</a></li>\n<li><strong>Options</strong>: Add root css <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/44\" target=\"_blank\">#44</a></li>\n<li><strong>Options</strong>: Add calcs mutation <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/47\" target=\"_blank\">#47</a></li>\n<li><strong>References</strong>: Centralize references (htmlGraphics) <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/30\" target=\"_blank\">#30</a></li>\n<li><strong>References</strong>: Expose props <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/36\" target=\"_blank\">#36</a></li>\n<li><strong>References</strong>: Add panelwillunmount event <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/37\" target=\"_blank\">#37</a></li>\n<li><strong>Website</strong>: Add website <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/39\" target=\"_blank\">#39</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>References</strong>: Fix missing type on custom properties <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/31\" target=\"_blank\">#31</a></li>\n</ul>\n<h3>Breaking changes</h3>\n<ul>\n<li><strong>Code editor</strong>: Use the integrated code editor <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/38\" target=\"_blank\">#38</a>. Latest version that works with this change requires v8.2.0+ of Grafana. This also fixes <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/issues/32\" target=\"_blank\">#32</a>.</li>\n</ul>\n<h2>v1.3.3 (2021-04-12)</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Repo</strong>: Fix errors not logged in the console <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/22\" target=\"_blank\">#22</a></li>\n</ul>\n<h2>v1.3.2 (2021-04-07)</h2>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Repo</strong>: Fix editor not loading with sub path <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/20\" target=\"_blank\">#20</a></li>\n</ul>\n<h2>v1.3.1 (2021-02-12)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Change the grafana version to the earliest working for this plugin (7.1.0)</li>\n</ul>\n<h2>v1.3.0 (2021-02-11)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>onInit</strong>: Add onpanelupdate events, dynamicData option, and &quot;Trigger panelupdate when mounted&quot; option <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/10\" target=\"_blank\">#10</a></li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>Import/Export</strong>: Fix panel options not updating when importing/changing values in the import option <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/13\" target=\"_blank\">#13</a></li>\n</ul>\n<h2>v1.2.0 (2020-12-18)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Options</strong>: Add overflow radio option <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/8\" target=\"_blank\">#8</a></li>\n<li><strong>Options</strong>: Add import and export of panel options <a href=\"https://github.com/gapitio/gapit-htmlgraphics-panel/pull/9\" target=\"_blank\">#9</a></li>\n</ul>\n<h2>v1.1.0 (2020-12-4)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Add default configuration to show how to connect CSS, HTML, JS, and customProperties.</li>\n<li><strong>Repo</strong>: codeData has been renamed customProperties. codeData is still available, and most of the internal code still uses codeData for backwards compatibility.</li>\n<li><strong>Options</strong>: Simplify field names and description.</li>\n<li><strong>Options</strong>: Move CSS, HTML, onRender, and onInit to the Display category.</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>HTML/SVG document</strong>: Fix html not updating after removing all code</li>\n<li><strong>Fit content to panel</strong>: Fix html elements not fitting to panel</li>\n</ul>\n<h3>Breaking changes</h3>\n<ul>\n<li>Panels made from older versions will add default values to CSS, HTML/SVG document, onInit, onRender, and customProperties if they are unchanged (If the field/option has been changed, they will not be overridden by the default value).</li>\n</ul>\n<h2>v1.0.0 (2020-11-20)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Repo</strong>: Use the new <a href=\"https://grafana.com/docs/grafana/latest/developers/plugins/package-a-plugin/\" target=\"_blank\">package format</a></li>\n<li><strong>Repo</strong>: <a href=\"https://grafana.com/docs/grafana/latest/developers/plugins/sign-a-plugin/\" target=\"_blank\">Sign the plugin</a></li>\n</ul>\n<h3>Breaking changes</h3>\n<ul>\n<li>Since the new package format, there might be problems unpacking it.</li>\n</ul>\n<h2>v0.0.4 (2020-10-22)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Code editor</strong>: Support offline</li>\n</ul>\n<h2>v0.0.3 (2020-10-06)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Code editor</strong>: Better Grafana types for autocompletion</li>\n<li><strong>codeData</strong>: Add a collapse header icon</li>\n</ul>\n<h2>v0.0.2 (2020-09-28)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Examples</strong>: Add bundle and Grafana variable example</li>\n<li><strong>Scripts</strong>: Add support for Grafana/template variables</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>SimpleOptions/codeData</strong>: Fix number showing string option</li>\n<li><strong>SVGBaseFix</strong>: Fix problem with multiple href.</li>\n</ul>\n<h2>v0.0.1 (2020-09-10)</h2>\n<h3>Features / enhancements</h3>\n<ul>\n<li><strong>Readme</strong>: Add more information.</li>\n<li><strong>plugin.json</strong>: Add author url and keywords.</li>\n<li><strong>SVGBaseFix</strong>: Update links used in the comments.</li>\n<li><strong>Screenshots</strong>: Add open-sans-font-weight, building-overview, building-overview-edit and code-editor screenshot.</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li><strong>plugin.json</strong>: Fix wrong date format.</li>\n</ul>\n<h2>v0.0.0 (2020-09-07)</h2>\n<p>Initial</p>\n",
+  "statusContext": "",
+  "downloads": 9351093,
+  "verified": false,
+  "featured": 0,
+  "internal": false,
+  "downloadSlug": "gapit-htmlgraphics-panel",
+  "popularity": 0.2095,
+  "signatureType": "community",
+  "grafanaDependency": ">=8.2.0",
+  "packages": {
+    "any": {
+      "md5": "f94cada4a55d51ae322c6ba4cb1ad7dd",
+      "sha256": "7b2fd0360d48d73c463dc41abf89096154f3cc9ea737198c461e1bbcd28312dc",
+      "packageName": "any",
+      "downloadUrl": "/api/plugins/gapit-htmlgraphics-panel/versions/2.2.3/download"
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "/plugins/gapit-htmlgraphics-panel"
+    },
+    {
+      "rel": "versions",
+      "href": "/plugins/gapit-htmlgraphics-panel/versions"
+    },
+    {
+      "rel": "latest",
+      "href": "/plugins/gapit-htmlgraphics-panel/versions/2.2.3"
+    },
+    {
+      "rel": "download",
+      "href": "/plugins/gapit-htmlgraphics-panel/versions/2.2.3/download"
+    }
+  ],
+  "angularDetected": false,
+  "repositoryUrl": "https://github.com/gapitio/gapit-htmlgraphics-panel",
+  "licenseUrl": "https://github.com/gapitio/gapit-htmlgraphics-panel/blob/main/LICENSE",
+  "documentationUrl": "https://gapit-htmlgraphics-panel.gapit.io/",
+  "raiseAnIssueUrl": "https://github.com/gapitio/gapit-htmlgraphics-panel/issues/new",
+  "scopes": [
+    "universal"
+  ],
+  "provenanceAttestation": "github#gapitio#sha256:7b2fd0360d48d73c463dc41abf89096154f3cc9ea737198c461e1bbcd28312dc",
+  "federalDisabled": false,
+  "managed": {
+    "enabled": false
+  }
+}

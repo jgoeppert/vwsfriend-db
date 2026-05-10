@@ -1,7 +1,11 @@
-version: '3.8'
+# version: '3.8'
 services:
   vwsfriend:
-    image: tillsteinbach/vwsfriend:${VWSFRIEND_VERSION-latest}
+    # image: tillsteinbach/vwsfriend:${VWSFRIEND_VERSION-latest}
+    image: tillsteinbach/vwsfriend:${VWSFRIEND_VERSION:-0.24.10}
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
     ports:
      - ${VWSFRIEND_PORT-4000}:${VWSFRIEND_PORT-4000}
     networks:
@@ -54,7 +58,10 @@ services:
       retries: 5
 
   grafana:
-    image: tillsteinbach/vwsfriend-grafana:${VWSFRIEND_GRAFANA_VERSION-latest}
+    image: tillsteinbach/vwsfriend-grafana:${VWSFRIEND_GRAFANA_VERSION:-0.24.10}
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
     ports:
       - ${GF_SERVER_HTTP_PORT-3000}:${GF_SERVER_HTTP_PORT-3000}
     networks:
@@ -64,7 +71,11 @@ services:
           - grafanabackend
     volumes:
       - grafana_data:/var/lib/grafana
+      - ./grafana-plugins:/var/lib/grafana/plugins
     environment:
+      - GF_INSTALL_PLUGINS=
+      - GF_PLUGINS_PREINSTALL=
+      - GF_PLUGINS_PREINSTALL_SYNC=
       - GF_SECURITY_ADMIN_USER=${VWSFRIEND_USERNAME-admin}
       - GF_SECURITY_ADMIN_PASSWORD=${VWSFRIEND_PASSWORD-secret}
       - GF_SERVER_HTTP_PORT=${GF_SERVER_HTTP_PORT-3000}
@@ -86,7 +97,13 @@ services:
 
 networks:
   bridge:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: "1200"
   backend:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: "1200"
 
 volumes:
   vwsfriend_data:

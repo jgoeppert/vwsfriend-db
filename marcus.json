@@ -1,0 +1,132 @@
+{
+  "status": "active",
+  "id": 665,
+  "typeId": 2,
+  "typeName": "Data Source",
+  "typeCode": "datasource",
+  "slug": "marcusolsson-json-datasource",
+  "name": "JSON API",
+  "description": "A data source plugin for loading JSON APIs into Grafana.",
+  "keywords": [
+    "json",
+    "api"
+  ],
+  "version": "1.3.28",
+  "versionStatus": "active",
+  "versionSignatureType": "grafana",
+  "versionSignedByOrg": "grafana",
+  "versionSignedByOrgName": "Grafana Labs",
+  "userId": 0,
+  "orgId": 5000,
+  "orgName": "Grafana Labs",
+  "orgSlug": "grafana",
+  "orgUrl": "https://grafana.org",
+  "url": "https://github.com/grafana/grafana-json-datasource",
+  "createdAt": "2020-09-22T08:26:30.000Z",
+  "updatedAt": "2026-03-16T10:31:18.000Z",
+  "json": {
+    "$schema": "https://github.com/grafana/grafana/raw/main/docs/sources/developers/plugins/plugin.schema.json",
+    "type": "datasource",
+    "name": "JSON API",
+    "id": "marcusolsson-json-datasource",
+    "metrics": true,
+    "logs": true,
+    "annotations": true,
+    "info": {
+      "description": "A data source plugin for loading JSON APIs into Grafana.",
+      "author": {
+        "name": "Grafana Labs",
+        "url": "https://grafana.com"
+      },
+      "keywords": [
+        "json",
+        "api"
+      ],
+      "logos": {
+        "small": "img/logo.svg",
+        "large": "img/logo.svg"
+      },
+      "links": [
+        {
+          "name": "Documentation",
+          "url": "https://grafana.com/docs/plugins/marcusolsson-json-datasource/latest/"
+        },
+        {
+          "name": "Github",
+          "url": "https://github.com/grafana/grafana-json-datasource"
+        },
+        {
+          "name": "License",
+          "url": "https://github.com/grafana/grafana-json-datasource/blob/main/LICENSE"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "Explore (Dark)",
+          "path": "img/dark.png"
+        },
+        {
+          "name": "Explore (Light)",
+          "path": "img/light.png"
+        }
+      ],
+      "version": "1.3.28",
+      "updated": "2026-03-16"
+    },
+    "dependencies": {
+      "grafanaDependency": ">=12.0.0",
+      "plugins": []
+    },
+    "buildMode": "production"
+  },
+  "readme": "<h1>JSON API data source for Grafana</h1>\n<h2>(NOTE: this plugin is now in maintenance mode, no new features will be added. We recommend using the <a href=\"https://grafana.com/grafana/plugins/yesoreyeram-infinity-datasource/\" target=\"_blank\" rel=\"noopener nofollow\">Infinity data source plugin</a> instead)</h2>\n<p>The Grafana JSON Datasource plugin empowers you to seamlessly integrate JSON data into Grafana. JSON is a versatile and widely used data format, and with this plugin, you can easily transform your JSON data into meaningful visualizations within Grafana dashboards.</p>\n<h2>Documentation</h2>\n<p>For comprehensive instructions on setting up and configuring the Grafana JSON API Datasource, please consult our official <a href=\"https://grafana.com/docs/plugins/marcusolsson-json-datasource/latest/\" target=\"_blank\" rel=\"noopener nofollow\">documentation</a>.</p>\n<blockquote>\n<p><strong>Maintenance</strong>: Now the plugin is being maintained by Grafana Labs. Big thanks to <a href=\"https://github.com/marcusolsson\" target=\"_blank\" rel=\"noopener nofollow\">Marcus Olsson</a> for the awesome work!</p>\n</blockquote>\n",
+  "changelog": "<h1>Changelog</h1>\n<h2>1.3.28</h2>\n<ul>\n<li>Implement Grafana 12.x compatibility and UI fixes</li>\n<li>Replace deprecated InfoBox with Alert in ExperimentalEditor</li>\n<li>FieldEditor: use aria-labels for add/remove buttons</li>\n<li>KeyValueEditor: GrafanaTheme2, useStyles2, theme.shape.radius.default</li>\n<li>TabbedQueryEditor: remove AutoSizer, fix CodeEditor usage for Grafana 12.x</li>\n<li>plugin.json: grafanaDependency &gt;=12.0.0, grafanaVersion 12.x\n<ul>\n<li>Fix lint errors</li>\n<li>Fixed the bug where JSONata path / fields are broken. Fixes #540</li>\n<li>Migrated deprecated Select component to Combobox</li>\n</ul></li>\n</ul>\n<h2>1.3.27</h2>\n<p>🐛 Update @grafana/plugin-ui</p>\n<h2>1.3.26</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update versions of various dependencies</li>\n</ul>\n<h2>1.3.25</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update versions of various dependencies</li>\n</ul>\n<h2>v1.3.24 - 2025-03-21</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update frontend dependencies</li>\n</ul>\n<h2>v1.3.23 - 2025-02-24</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update <code>jsonpath-plus</code> to version 10.3.0</li>\n<li>🛡️ <strong>Security</strong>: Update <code>dompurify</code> to version 3.2.4</li>\n<li>⚙️ <strong>Chore</strong>: Update <code>serialize-javascript</code> to version 6.0.2</li>\n</ul>\n<h2>v1.3.22 - 2025-02-05</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Update workflows</li>\n<li>⚙️ <strong>Chore</strong>: Migrate to playwright for e2e tests</li>\n</ul>\n<h2>v1.3.21 - 2025-01-09</h2>\n<ul>\n<li>⚙️ <strong>Fix</strong>: Enhance URL safety checks by sanitizing urls first.</li>\n</ul>\n<h2>v1.3.20 - 2024-11-28</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update <code>jsonpath-plus</code> to version 10.2.0</li>\n<li>🛡️ <strong>Security</strong>: Update <code>cross-spawn</code> to version 7.0.5</li>\n</ul>\n<h2>v1.3.19 - 2024-10-29</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update <code>jsonpath-plus</code> to version 10.1.0</li>\n<li>🛡️ <strong>Security</strong>: Update <code>uplot</code> to version 1.6.31</li>\n</ul>\n<h2>v1.3.18 - 2024-10-18</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Update <code>jsonpath-plus</code> to version 10.0.6</li>\n<li>🛡️ <strong>Security</strong>: Bump <code>dompurify</code> from 3.1.0 to 3.1.6</li>\n<li>🛡️ <strong>Security</strong>: Bump <code>path-to-regexp</code> from 1.8.0 to 1.9.0</li>\n</ul>\n<h2>v1.3.17 - 2024-09-03</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Bump <code>micromatch</code> from 4.0.5 to 4.0.8</li>\n<li>🛡️ <strong>Security</strong>: Bump <code>webpack</code> from 5.86.0 to 5.94.0</li>\n<li>🛡️ <strong>Security</strong>: Bump <code>fast-loops</code> from 1.1.3 to 1.1.4</li>\n<li>🛡️ <strong>Security</strong>: Bump <code>ws</code> from 8.14.2 to 8.17.1</li>\n<li>🛡️ <strong>Security</strong>: Bump <code>braces</code> from 3.0.2 to 3.0.3</li>\n</ul>\n<h2>v1.3.16 - 2024-06-13</h2>\n<ul>\n<li>⚙️ <strong>Fix</strong>: Consider <code>\\</code> (backslash) characters in allowed url checks.</li>\n</ul>\n<h2>v1.3.15 - 2024-05-14</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Updated documentation</li>\n</ul>\n<h2>v1.3.14 - 2024-04-15</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Update dependencies</li>\n</ul>\n<h2>v1.3.13 - 2024-04-04</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Update dependencies</li>\n</ul>\n<h2>v1.3.12 - 2024-02-14</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Maintenance</li>\n</ul>\n<h2>v1.3.11 - 2024-02-14</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Add more robust URL handling, do not allow '/../' in the URL, only allow GET and POST methods ( CVE-2023-5123 )</li>\n</ul>\n<h2>v1.3.10 - 2023-12-20</h2>\n<ul>\n<li>⚙️ <strong>Docs</strong>: Documentation website moved from <a href=\"https://grafana.github.io/grafana-json-datasource\" target=\"_blank\">github pages</a> to <a href=\"https://grafana.com/docs/plugins/marcusolsson-json-datasource/latest/\" target=\"_blank\">grafana.com/docs/plugins</a> page</li>\n</ul>\n<h2>v1.3.9 - 2023-11-21</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Update configuration page to follow best practices</li>\n<li>⚙️ <strong>Chore</strong>: Remove legacy form styles</li>\n<li>⚙️ <strong>Chore</strong>: Update readme and documentation</li>\n<li>⚙️ <strong>Chore</strong>: Added lint github workflow</li>\n</ul>\n<h2>v1.3.8 - 2023-10-19</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Update dependencies</li>\n</ul>\n<h2>v1.3.7 - 2023-10-18</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Migrate to create-plugin</li>\n<li>⚙️ <strong>Chore</strong>: Add feature tracking</li>\n</ul>\n<h2>v1.3.6 - 2023-05-30</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: Docs update</li>\n</ul>\n<h2>v1.3.5 - 2023-04-05</h2>\n<ul>\n<li>🛡️ <strong>Security</strong>: Recently, A third party researcher (Alessio Della Libera of <strong>Snyk Research Team</strong>) discovered and privately disclosed to us a stored XSS vulnerability in the Grafana-maintained <code>marcusolsson-json-datasource</code> plugin also known as “JSON API plugin” .</li>\n</ul>\n<p>Users with the editor role could perform a stored XSS attack against other viewers, editors, and administrators by including a specially crafted javascript statement in the <code>field</code> extractor in queries to the marcusolsson-json-datasource plugin. This resulted in XSS against anyone viewing a panel configured to query the datasource with a malicious query.</p>\n<p>This vulnerability worked because the <code>marcusolsson-json-datasource</code> plugin uses the <code>jsonpath-plus</code> library to evaluate editor-supplied jsonpath expressions. In its default configuration (which we used), this library is an XSS vector, as the JSONPath spec allows for embedded subexpressions, which <code>jsonpath-plus</code> implements as arbitrary javascript expressions.</p>\n<p>In order to mitigate this vulnerability, we now supply a configuration parameter to <code>jsonpath-plus</code> which forbids the evaluation of subexpressions; it is important to note that this change may <strong>break</strong> existing JSONPath queries that rely on filter or eval expressions.</p>\n<p>If your dashboards currently rely on JSONPath queries containing subexpressions, there are a few potential migration paths:</p>\n<ol>\n<li>For simple queries that use subexpressions for indexing/slicing, it may be possible to rewrite the query without a subexpressions for instance <code>[(@.length-1)]</code> can also be represented as <code>[:-1]</code>.</li>\n<li>For more complex queries, we suggest switching to the <a href=\"http://docs.jsonata.org/simple\" target=\"_blank\"><code>jsonata</code> language</a>, which the plugin also supports. This language has similar features to JSONPath, including support for filter expressions (called “predicates” in the documentation).</li>\n<li>If changing your existing queries isn’t feasible, the community plugin <a href=\"https://grafana.com/grafana/plugins/yesoreyeram-infinity-datasource/\" target=\"_blank\">“Infinity”</a> supports JSONPath expressions, including filters and subexpressions if used with the <code>backend</code> parser option. Please note that Infinity is community supported plugin.</li>\n</ol>\n<h2>v1.3.4 - 2023-04-04</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: docs update</li>\n</ul>\n<h2>v1.3.3 - 2023-03-20</h2>\n<ul>\n<li>⚙️ <strong>Chore</strong>: dependencies update</li>\n<li>⚙️ <strong>Chore</strong>: spellcheck added</li>\n</ul>\n<h2>v1.3.2 - 2022-10-14</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.3.1...v1.3.2\" target=\"_blank\">Full changelog</a></p>\n<ul>\n<li>Fixed the broken docs and links</li>\n</ul>\n<h2>v1.3.1 - 2022-01-24</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.3.0...v1.3.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Append suffix to param key to uniquify duplicate param keys <a href=\"https://github.com/grafana/grafana-json-datasource/pull/232\" target=\"_blank\">#232</a> (thanks <a href=\"https://github.com/rejohnst\" target=\"_blank\">@rejohnst</a>!)</li>\n<li>Added grafana global variables when doing a query using jsonata <a href=\"https://github.com/grafana/grafana-json-datasource/pull/223\" target=\"_blank\">#223</a> (thanks <a href=\"https://github.com/amng\" target=\"_blank\">@amng</a>!)</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Certain strings incorrectly identified as dates <a href=\"https://github.com/grafana/grafana-json-datasource/issues/202\" target=\"_blank\">#202</a></li>\n</ul>\n<h2>v1.3.0 - 2021-09-03</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.2.1...v1.3.0\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Add support for JSONata (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/114\" target=\"_blank\">#114</a>), a query language similar to JSONPath with support for transformations.</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Cannot read property 'filter' of undefined (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/156\" target=\"_blank\">#156</a>)</li>\n</ul>\n<h2>v1.2.1 - 2021-06-18</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.2.0...v1.2.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Update dependencies, docs, and metadata</li>\n</ul>\n<h2>v1.2.0 - 2021-05-18</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.1.1...v1.2.0\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Adding $<strong>isoFrom() and $</strong>isoTo() macros (<a href=\"https://github.com/grafana/grafana-json-datasource/pull/115\" target=\"_blank\">#115</a>) (thanks <a href=\"https://github.com/jirkafajfr\" target=\"_blank\">@jirkafajfr</a>!)</li>\n<li>Using JSON.stringify instead of toString for object types in parseValue (<a href=\"https://github.com/grafana/grafana-json-datasource/pull/111\" target=\"_blank\">#111</a>) (thanks <a href=\"https://github.com/Totalus\" target=\"_blank\">@Totalus</a>!)</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>🐛 <strong>Fix</strong>: Fix for macros not running in variable queries (<a href=\"https://github.com/grafana/grafana-json-datasource/pull/100\" target=\"_blank\">#100</a>) (thanks <a href=\"https://github.com/KensingtonTech\" target=\"_blank\">@KensingtonTech</a>!)</li>\n</ul>\n<h2>v1.1.1 - 2021-04-17</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.1.0...v1.1.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Improve editor styling</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>🐛 <strong>Fix</strong>: Fix issue where wrong fields were used when grouping</li>\n<li>Add variable support for aliases</li>\n</ul>\n<h2>v1.1.0 - 2021-04-15</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.0.1...v1.1.0\" target=\"_blank\">Full changelog</a></p>\n<p>This release introduces an Experimental tab to the query editor. This will be used to let users try out features while they're being developed. Each feature has a link the the GitHub issue where you can share you feedback, before the feature is considered stable.</p>\n<h3>Enhancements</h3>\n<ul>\n<li>Extend variables support to options</li>\n<li>Don't detect time fields from Unix epoch (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/82\" target=\"_blank\">#82</a>)</li>\n<li>Add params to cache key (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/85\" target=\"_blank\">#85</a>)</li>\n<li>Add support for field aliases</li>\n<li>Add Experimental section to query editor to test features under development</li>\n<li>Experimental: Group query results by field (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/36\" target=\"_blank\">#36</a>)</li>\n<li>Experimental: Set display name for metric fields (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/36\" target=\"_blank\">#36</a>)</li>\n<li>Experimental: Set optional label for variables (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/79\" target=\"_blank\">#79</a>)</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Ignore hidden queries (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/83\" target=\"_blank\">#83</a>)</li>\n<li>New queries don't use default values</li>\n</ul>\n<h2>v1.0.1 - 2021-03-05</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v1.0.0...v1.0.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Add annotation support</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Can't connect to API when URL contains encoded slash (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/59\" target=\"_blank\">#59</a>)</li>\n</ul>\n<h2>v1.0.0 - 2021-03-04</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.10.1...v1.0.0\" target=\"_blank\">Full changelog</a></p>\n<p>No noteworthy features or bug fixes in this release. Mostly metadata updates.</p>\n<h2>v0.10.1 - 2021-02-27</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.10.0...v0.10.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Bug fixes</h3>\n<ul>\n<li>Undefined cache duration isn't handled</li>\n<li>Query editor tries to update read only property</li>\n</ul>\n<h2>v0.10.0 - 2021-02-19</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.9.2...v0.10.0\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Add auto-completion to JSON Path queries</li>\n</ul>\n<h2>v0.9.2 - 2021-02-03</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.9.1...v0.9.2\" target=\"_blank\">Full changelog</a></p>\n<h3>Bug fixes</h3>\n<ul>\n<li>Variable queries fail with error (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/48\" target=\"_blank\">#48</a>)</li>\n</ul>\n<h2>v0.9.1 - 2021-02-01</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.9.0...v0.9.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Bug fixes</h3>\n<ul>\n<li>Cannot read property 'toString' of null (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/46\" target=\"_blank\">#46</a>)</li>\n</ul>\n<h2>v0.9.0 - 2021-02-01</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.8.0...v0.9.0\" target=\"_blank\">Full changelog</a></p>\n<p><strong>BREAKING CHANGE:</strong> Query parameters set by the query editor no longer overrides the data source config, to match how headers are handled in the Grafana proxy. This establishes the convention that any configuration made by an administrator should have higher priority.</p>\n<p><strong>IMPORTANT:</strong> This release contains many new changes that touches several aspects of the plugin. <strong>Make sure that you back up your dashboards before updating your plugin.</strong></p>\n<p>This release introduces a new query editor that gives more control of the request.</p>\n<ul>\n<li>Support for both GET and POST methods</li>\n<li>Support for request bodies (when using POST)</li>\n<li>Support for headers</li>\n</ul>\n<p>It introduces a new key value editor for query parameters and headers, as well as a Monaco-based editor for editing the request body with syntax highlighting.</p>\n<p>This release deprecates the <code>queryString</code> property in the query model, in favor of the new <code>params</code>. The query string config <em>should</em> be backwards-compatible (and forward-compatible) with previous versions, but make sure to back up your dashboard before upgrading.</p>\n<h2>v0.8.0 - 2021-01-08</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.7.1...v0.8.0\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Use the refId as the series name</li>\n<li>Add type configuration for queries (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/37\" target=\"_blank\">#37</a>)</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Grafana Explore gets stuck when adding a second query (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/31\" target=\"_blank\">#31</a>)</li>\n<li>Multiple data source queries overwrite each other</li>\n</ul>\n<h2>v0.7.1 - 2020-12-07</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.7.0...v0.7.1\" target=\"_blank\">Full changelog</a></p>\n<h3>Bug fixes</h3>\n<ul>\n<li>Falsy values are returned as NaN (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/25\" target=\"_blank\">#25</a>)</li>\n</ul>\n<h2>v0.7.0 - 2020-12-04</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.6.4...v0.7.0\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Add support for custom paths (<a href=\"https://github.com/grafana/grafana-json-datasource/pull/24\" target=\"_blank\">#24</a>)</li>\n<li>Add epoch time macros (<a href=\"https://github.com/grafana/grafana-json-datasource/pull/22\" target=\"_blank\">#22</a>)</li>\n<li>Migrate to new form components. This bumps the minimum required Grafana version to 7.3.0</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Template variable chaining is not working (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/23\" target=\"_blank\">#23</a>)</li>\n<li>Cannot read property 'length' of null (<a href=\"https://github.com/grafana/grafana-json-datasource/issues/21\" target=\"_blank\">#21</a>)</li>\n</ul>\n<h2>v0.6.4 - 2020-11-30</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.6.3...v0.6.4\" target=\"_blank\">Full changelog</a></p>\n<h3>Bug fixes</h3>\n<ul>\n<li>Fixes an issue where custom query parameters defined in the data source are flipped.</li>\n</ul>\n<h2>v0.6.3 - 2020-11-27</h2>\n<p><a href=\"https://github.com/grafana/grafana-json-datasource/compare/v0.6.2...v0.6.3\" target=\"_blank\">Full changelog</a></p>\n<h3>Enhancements</h3>\n<ul>\n<li>Updated <code>@grafana</code> dependencies from <code>^7.0.0</code> to <code>^7.3.0</code></li>\n<li>Improved release process using the new <a href=\"https://github.com/grafana/plugin-workflows\" target=\"_blank\">GitHub workflows</a> for Grafana plugins</li>\n</ul>\n",
+  "statusContext": "",
+  "downloads": 42097719,
+  "verified": false,
+  "featured": 0,
+  "internal": false,
+  "downloadSlug": "marcusolsson-json-datasource",
+  "popularity": 0.234,
+  "signatureType": "grafana",
+  "grafanaDependency": ">=12.0.0",
+  "packages": {
+    "any": {
+      "md5": "e288f3b01068f0b41da3eb4baa1e2d68",
+      "sha256": "628b050c446c6e2e1eb48b817c0568f3fc782f24c98d11a20067f155966da5c0",
+      "packageName": "any",
+      "downloadUrl": "/api/plugins/marcusolsson-json-datasource/versions/1.3.28/download"
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "/plugins/marcusolsson-json-datasource"
+    },
+    {
+      "rel": "versions",
+      "href": "/plugins/marcusolsson-json-datasource/versions"
+    },
+    {
+      "rel": "latest",
+      "href": "/plugins/marcusolsson-json-datasource/versions/1.3.28"
+    },
+    {
+      "rel": "download",
+      "href": "/plugins/marcusolsson-json-datasource/versions/1.3.28/download"
+    }
+  ],
+  "angularDetected": false,
+  "repositoryUrl": "https://github.com/grafana/grafana-json-datasource",
+  "licenseUrl": "https://github.com/grafana/grafana-json-datasource/blob/main/LICENSE",
+  "documentationUrl": "https://grafana.com/docs/plugins/marcusolsson-json-datasource/latest/",
+  "raiseAnIssueUrl": null,
+  "scopes": [
+    "universal"
+  ],
+  "provenanceAttestation": null,
+  "federalDisabled": false,
+  "managed": {
+    "enabled": false
+  }
+}
